@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu May  7 19:48:44 2020
+
+@author: anushkadeshmukh
+"""
+#
+list1=[12,-7,5,64,-14]
+list2=[12,14,-95,3]    
+for num in list1:
+    if num>0:
+        print(num)
+for num in list2:
+    if num>0:
+        print(num)
+        
+        
+#Fibonaucci serise
+n=int(input("How many terms do you want to print the sequence for?"))
+#x and y are to generate the first two terms
+x=0
+y=1
+
+z=0
+
+if n<=0:
+    print("Please Enter a Positive number")
+elif n==1:
+    print("The Fibonacci serise upto",n,'-')
+else:
+    print("The Fibonaucci sequence:")
+    
+    while z<n:
+        print(x)
+        a=x+y
+        x=y
+        y=a
+        z=z+1
+            
+
+#Assigning elements to different lists
+
+list1=[1,2,3,4,5]
+print(list1)
+#APPEND-Adding elements to the end of the list
+list1.append(6)
+print(list1)
+
+list2=[2,4,6,8]
+print(list2)
+#EXTEND-Adding seveal elements to the end of the list
+list2.extend(range(10,20,2))
+print(list2)
+
+
+#INSERT-Adding at element at a particular index 
+list3=[10,20,30,40,60]
+print(list3)
+list3.insert(4,50)
+print(list3)
+
+
+#Accessing elements from tuples
+tup=(1,2,3,4,5)
+print(tup)
+#accessing the 1st index to the the 3rd index
+tup[1:4]
+#accessing the first index to the 3rd index
+tup[:4]
+#accesing the third index to the last 
+tup[3:]
+#deleting different dictionary elements
+info={
+    'Nush':77,
+    'Joe':88,
+    'Sam':90
+}
+print(info)
+#POP-using to drop an element from a dictionary
+info.pop('Nush')
+print(info)
+#DEL- using del to delete an element 
+del info['Joe']
+print(info)
+
+
+
+
